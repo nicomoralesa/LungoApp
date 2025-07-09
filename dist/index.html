@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/assets/icon-D1Xkf0c0.png" />
+    <link rel="apple-touch-icon" href="/assets/icon-D1Xkf0c0.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lungo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: {
+                DEFAULT: '#D79669',
+                hover: '#B97D56',
+                light: '#F5EBE0',
+              },
+              secondary: '#4a5568',
+              success: {
+                DEFAULT: '#28a745',
+                light: '#eaf6ec',
+              },
+              danger: {
+                DEFAULT: '#dc3545',
+                light: '#fdebec',
+              },
+              warning: {
+                DEFAULT: '#ffc107',
+                light: '#fff8e6',
+              },
+            },
+            animation: {
+              'fade-in': 'fadeIn 0.3s ease-out forwards',
+            },
+            keyframes: {
+              fadeIn: {
+                '0%': { opacity: 0, transform: 'translateY(-10px)' },
+                '100%': { opacity: 1, transform: 'translateY(0)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <script>
+      // Global configuration for the application
+      window.LUNGO_APP_CONFIG = {
+        API_BASE_URL: 'http://localhost:5000/api'
+      };
+    </script>
+    <script src="https://unpkg.com/html5-qrcode" type="text/javascript"></script>
+
+<link rel="stylesheet" href="/index.css">
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "react": "https://esm.sh/react@^19.1.0",
+    "react-dom": "https://esm.sh/react-dom@^19.1.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "path": "https://esm.sh/path@^0.12.7",
+    "vite": "https://esm.sh/vite@^7.0.1",
+    "url": "https://esm.sh/url@^0.11.4"
+  }
+}
+</script>
+  <script type="module" crossorigin src="/assets/index-DK_n2EBW.js"></script>
+</head>
+  <body class="bg-gray-100">
+    <div id="modal-root"></div>
+    <div id="root"></div>
+  </body>
+</html>
