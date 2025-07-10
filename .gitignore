@@ -1,12 +1,26 @@
-# Dependencias
+# Dependencias de Node.js
 node_modules/
+
+# Archivos temporales de SQLite (base de datos)
+*.sqlite-shm
+*.sqlite-wal
+
+# Archivos de build de React (si tu frontend está en esta misma carpeta, aunque idealmente deberían estar separados)
+# Si tu backend tiene una carpeta 'dist' de build, también la ignoramos.
+dist/
+
+# Archivos de configuración de entorno (con credenciales sensibles, por ejemplo)
 .env
 
 # Logs
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# Archivos de sistema operativo
+# Archivos del sistema operativo macOS
 .DS_Store
-.vscode/ # Si usas VS Code y no quieres compartir su configuración de proyecto
+
+# Configuración de editores (opcional, si no quieres compartirlas)
+.vscode/
+.idea/
